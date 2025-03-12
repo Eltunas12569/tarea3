@@ -23,7 +23,7 @@ WORKDIR /app
 COPY --from=builder /app/target/Recomendaciones-0.0.1-SNAPSHOT.jar /app/app.jar
 
 # Puerto que expone la aplicación
-EXPOSE 8080
+EXPOSE 8081
 
 # Comando para ejecutar la aplicación
 CMD ["java", "-jar", "app.jar"]
